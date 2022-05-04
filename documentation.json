@@ -347,18 +347,87 @@
                 }
             ],
             "stylesData": ""
+        },
+        {
+            "name": "TituloComponent",
+            "id": "component-TituloComponent-a556f8b9f024dad6d78ac794a2fb66f7ea5e383be62195d20b46e487f237d5a37c8cbac8ca859c07da34f7490e3372b4a8ac8c512957bdea55c29c8737f86eee",
+            "file": "src/app/components/titulo/titulo.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-titulo",
+            "styleUrls": [
+                "./titulo.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./titulo.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "titulo",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-titulo',\n  templateUrl: './titulo.component.html',\n  styleUrls: ['./titulo.component.css']\n})\nexport class TituloComponent {\n\n  @Input() titulo:string=\"\";\n  \n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./titulo.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 10
+            },
+            "templateData": "<h1>{{titulo}}</h1>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-2ec58e7a32463b9b6cd970cb31e08e29029a47873b1b978b2bb334fc7975f6f5b3557f06f1d8edb8d9117c1bc37b26d4301c2a5e8ccced6f4a56dde5c6a98af4",
+            "id": "module-AppModule-040d2b52c7c18716d688634e776b418cbd954fc190df8b0d9550c0d57ef95aa86c122647063a9cbe9023188965fd4454e66d97f82579a81e32d6cedb7568f663",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\nimport { TituloComponent } from './components/titulo/titulo.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    TituloComponent\n  ],\n  imports: [\n    BrowserModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -369,6 +438,9 @@
                     "elements": [
                         {
                             "name": "AppComponent"
+                        },
+                        {
+                            "name": "TituloComponent"
                         }
                     ]
                 },
@@ -408,14 +480,24 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
-                "name": "environment",
+                "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
+                "file": "src/app/components/titulo/titulo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Empty",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/titulo/titulo.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "environment",
@@ -426,6 +508,16 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "Large",
@@ -545,6 +637,16 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/titulo/titulo.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TituloComponent>",
+                "defaultValue": "args =>({\r\n    component:TituloComponent,\r\n    props:{\r\n        ...args,\r\n    }\r\n})"
             }
         ],
         "functions": [],
@@ -572,16 +674,36 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.ts": [
+            "src/app/components/titulo/titulo.stories.ts": [
                 {
-                    "name": "environment",
+                    "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/environments/environment.ts",
+                    "file": "src/app/components/titulo/titulo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Empty",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/titulo/titulo.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/titulo/titulo.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TituloComponent>",
+                    "defaultValue": "args =>({\r\n    component:TituloComponent,\r\n    props:{\r\n        ...args,\r\n    }\r\n})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -594,6 +716,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -719,7 +853,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 3,
         "status": "low",
         "files": [
             {
@@ -729,6 +863,45 @@
                 "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/titulo/titulo.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TituloComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/titulo/titulo.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/titulo/titulo.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Empty",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/titulo/titulo.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

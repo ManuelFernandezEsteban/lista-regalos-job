@@ -1,6 +1,5 @@
-import { Component, Input } from '@angular/core';
-
-import { Grupo } from 'src/app/models/grupo.models';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { grupo } from '../../interfaces/grupo';
 
 
 @Component({
@@ -10,9 +9,18 @@ import { Grupo } from 'src/app/models/grupo.models';
 })
 export class BoxComponent {
   @Input()
-  grupo!: Grupo;
+  grupo!: grupo;
   
 
+
+
   constructor() { }
+
+  seleccionado(){
+    
+    !this.grupo.selected;
+    console.log(this.grupo);
+        
+  }
  
 }

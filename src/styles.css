@@ -1,1 +1,159 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+:root{
+    --backgroundColorBoxHover: #DCD5FF;
+    --backgrounColorTag:#569B51;
+    --boderBoxColorHover:#7F66FF;
+    --borderBoxColor:#A2A2A2;
+    --fontfamily:'Montserrat';
+    --backgroundColorBody:#333;
+    --backgroundColorComponente:#ccc;
+    --backgroundColorContentBox:#1c1f4a;
+    font-family: var(--fontfamily);
+    color: white;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundColorBody);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+.componente{
+    width:100%;
+    height: 70%;
+    overflow-y: scroll;    
+    background-color: var(--backgroundColorComponente);
+}
+
+.box-list{
+    display: grid;
+    grid-row-gap: 25px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.wrapper-box{
+    border: 1px solid var(--borderBoxColor);
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    width: 370px;  
+    height: 250px;    
+}
+
+.wrapper-box:hover{
+    background-color: var(--backgroundColorBoxHover);
+    border: 1px solid var(--boderBoxColorHover);
+    
+}
+
+.box{
+    height: 75%;
+    width: 100%;
+    background-color: var(--backgroundColorContentBox);
+    position: absolute;
+    bottom: 0px;
+    border-radius: 15px;    
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.icon-content-box{
+    position: absolute;
+    top: 6.5%;
+    right: 10%;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.tag-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-tag{
+    background-color: #34E05A;
+    width: auto;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: 200;    
+    font-size: 0.8rem;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.selected{
+    background-color: var(--backgroundColorBoxHover);
+    border: 1px solid var(--boderBoxColorHover);
+}
+
+@media screen and (min-width:767px) {
+
+    .box-list{       
+        grid-template-columns: repeat(2,1fr);    
+          
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+  
+
+    .box-list{              
+        display: flex;   
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .wrapper-box{
+        margin-right: 25px;
+        
+    }
+    .componente{
+        width: 750px;
+        height: 50%;
+        overflow-x: scroll; 
+        overflow-y: hidden;   
+        background-color: var(--backgroundColorComponente);       
+        padding-top: 0px;
+        padding-bottom: 0px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}

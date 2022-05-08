@@ -1,5 +1,13 @@
-<div>
-    <app-titulo [titulo]="grupo.titulo"></app-titulo>
-    <app-descripcion [descripcion]="grupo.descripcion"></app-descripcion>
-    <app-tag-list [tags]="grupo.tags"></app-tag-list>
+<div class="wrapper-box" (click)="seleccionado()" [ngClass]="!grupo.selected?'':'selected'">
+    <div class="icon-content-box">
+        <img [src]="grupo.icono" [alt]="grupo.iconoDescripcion">
+    </div>
+    <div class="box">
+        <div class="content-box">
+            <app-titulo [titulo]="grupo.titulo"></app-titulo>
+            <app-descripcion [descripcion]="grupo.descripcion"></app-descripcion>
+            <app-tag-list [tags]="grupo.tags"></app-tag-list>
+        </div>
+
+    </div>
 </div>

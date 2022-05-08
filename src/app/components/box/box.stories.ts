@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { componentWrapperDecorator, Meta, moduleMetadata, Story } from '@storybook/angular';
-import { Tag } from 'src/app/models/tag.models';
 import { TagListComponent } from '../tag-list/tag-list.component';
 import { TagComponent } from '../tag/tag.component';
 import { BoxComponent } from './box.component';
@@ -31,7 +30,6 @@ const Template: Story<BoxComponent> = args =>({
 
 export const Default=Template.bind({});
 Default.args={
-
     grupo:{
        titulo:'Crew',
         descripcion:'Lista de regalos para el grupo crew',
@@ -42,15 +40,41 @@ Default.args={
             {
                 tag:'Libros'
             }
-        ]
+        ],
+        icono:"./assets/icons/navy24px.png",
+        iconoDescripcion:"icono tripulacion",
+        selected:false       
     }
 }
+
+export const Selected =Template.bind({});
+Selected.args={
+    grupo:{
+        titulo:'Crew',
+        descripcion:'Lista de regalos para el grupo crew',
+        tags:[
+            {
+                tag:'Deporte de riesgo'
+            },
+            {
+                tag:'Libros'
+            }
+        ],
+        icono:"./assets/icons/navy24px.png",
+        iconoDescripcion:"icono tripulacion",
+        selected:true
+    }
+}
+
 export const Empty=Template.bind({});
 Empty.args={
     grupo:{
         titulo:'',
          descripcion:'',
          tags:[              
-         ]
+         ],
+         icono:"",
+         iconoDescripcion:"",
+         selected:false
      }
 };

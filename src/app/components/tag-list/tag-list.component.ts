@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Tag } from 'src/app/models/tag.models';
+import { Tag } from 'src/app/interfaces/tag';
+
 
 @Component({
   selector: 'app-tag-list',

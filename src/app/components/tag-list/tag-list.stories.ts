@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { componentWrapperDecorator, Meta, moduleMetadata, Story } from '@storybook/angular';
-import { Tag } from 'src/app/models/tag.models';
+import { Tag } from 'src/app/interfaces/tag';
 import { TagComponent } from '../tag/tag.component';
 import { TagListComponent } from './tag-list.component';
 

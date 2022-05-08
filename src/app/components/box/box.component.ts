@@ -16,11 +16,8 @@ export class BoxComponent {
 
   constructor() { }
 
-  seleccionado(){
-    
-    !this.grupo.selected;
-    console.log(this.grupo);
-        
+  seleccionado(){    
+    !this.grupo.selected;            
   }
  
 }

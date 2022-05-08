@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from "@angular/common/http";
 import { TagComponent } from './tag/tag.component';
 import { TagListComponent } from './tag-list/tag-list.component';
 import { TituloComponent } from './titulo/titulo.component';
@@ -9,10 +10,12 @@ import { BoxlistComponent } from './boxlist/boxlist.component';
 
 
 
+
 @NgModule({
   declarations: [TagComponent,TagListComponent,TituloComponent,DescripcionComponent,BoxComponent,BoxlistComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports:[BoxlistComponent]
 })

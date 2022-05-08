@@ -25,3 +25,48 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Solución para  el componente lista de regalos 
+
+Esta es una solución para el componente usando Angular.
+
+## Vista General
+
+### El reto
+
+Task 1 -> Crear un componente con un título, una descripción y un grupo de regalos que contenga la siguiente información: Título, Descripción, Tags del grupo
+
+Task 2 -> Asegurarse que el componente sea responsive: Adopta un modo de scroll horizontal para PC, Adopta modo lista para Móvil y Tablet
+
+#### Subtareas
+
+Al clicar en cada grupo de regalos permite ejecutar una acción (por ahora indefinida).
+
+Utilizar un sistema lo más atómico posible
+
+Comentar el desarrollo de este componente
+
+### Capturas de pantalla
+
+![Desktop](./screenshot/ScreenshotDesktopListaRegalos.png)
+![Tablet](./screenshot/ScreenshotTabletListaRegalos.png)
+![Mobile](./screenshot/ScreenshotMobileListaRegalos.png)
+
+### Enlaces
+
+- Solution URL: [GitHub](https://github.com/ManuelFernandezEsteban/)
+- Live Site URL: [GitHubPages](https://manuelfernandezesteban.github.io/)
+
+## El Proceso
+
+### Built with
+
+- Angular
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+## Author
+
+- linkedIn - [LinkedIn](www.linkedin.com/in/manuel-fernandez-esteban)

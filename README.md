@@ -76,7 +76,23 @@ Se encarga de mostrar un tag individual del grupo, mediante un div y un span, la
 
 #### Tag List
 
-Este componente se encarga de agrupar los components tag en 
+Este componente se encarga de agrupar los components tag en una lista.
+
+#### Box
+
+Este componente agrupa los anteriores, también contiene un icono representativo del grupo
+
+#### BoxList
+
+Este es el copmponente principal, agrupa los box existentes en un grid para las vistas movil y tablet y con un flexbox para la vista desktop.
+
+
+He optado por separar todas las clases CSS por componentes en lugar de tener un solo archivo para poder tener una mayor personalización. 
+
+Para mostrar el componente he colocado una caja de tamaño fijo en desktop para que se pueda apreciar el scroll y de tamaño variable en tablet y movil.
+
+Para cargar los diferente grupos he creado archivo JSON con los datos y estos se leen y se envían al componente. Esto se realiza mediante el servicio dataService. También se podría inyectar el servicio en el componente boxList y leer los datos en el metodo OnInit. 
+
 
 
 
@@ -88,6 +104,6 @@ Este componente se encarga de agrupar los components tag en
 - CSS Grid
 - Mobile-first workflow
 
-## Author
+## Autor
 
 - linkedIn - [LinkedIn](www.linkedin.com/in/manuel-fernandez-esteban)

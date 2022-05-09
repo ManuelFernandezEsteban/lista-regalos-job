@@ -1,0 +1,29 @@
+.box-list{
+    display: grid;
+    grid-row-gap: 25px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (min-width:767px) {
+
+    .box-list{       
+        grid-template-columns: repeat(2,1fr);    
+          
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+  
+
+    .box-list{              
+        display: flex;   
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,50 @@
+
+
+.wrapper-box{
+    border: 1px solid var(--borderBoxColor);
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    width: 370px;  
+    height: 250px;  
+    cursor: pointer;  
+}
+
+.wrapper-box:hover{
+    background-color: var(--backgroundColorBoxHover);
+    border: 1px solid var(--boderBoxColorHover);
+    
+}
+
+.box{
+    height: 75%;
+    width: 100%;
+    background-color: var(--backgroundColorContentBox);
+    position: absolute;
+    bottom: 0px;
+    border-radius: 15px;    
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.icon-content-box{
+    position: absolute;
+    top: 6.5%;
+    right: 10%;
+}
+
+.selected{
+    background-color: var(--backgroundColorBoxHover);
+    border: 1px solid var(--boderBoxColorHover);
+}
+
+.wrapper-box{
+    margin-right: 25px;
+    
+}

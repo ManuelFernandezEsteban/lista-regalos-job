@@ -54,10 +54,31 @@ Comentar el desarrollo de este componente
 
 ### Enlaces
 
-- Solution URL: [GitHub](https://github.com/ManuelFernandezEsteban/)
-- Live Site URL: [GitHubPages](https://manuelfernandezesteban.github.io/)
+- Solution URL: [GitHub](https://github.com/ManuelFernandezEsteban/lista-regalos-job.git)
 
 ## El Proceso
+
+Partiendo de no conocer la librería StoryBook para documentar el componente, lo primero ha sido hacer parte del tutorial disponible en https://storybook.js.org/tutorials/. 
+Para tener un diseño lo mas atómico posible dividi el componente en piezas de la siguiente manera, de abajo hacia arriba, de esta forma tambien seguía
+la metodología CDD (Component-Driven-Development):
+
+#### Componente título
+
+Se encarga de mostrar una cadena de texto en el componente que recibe como parametro, en este caso el título mediante una etiqueta H1
+
+#### Componente descripción
+
+Se encarga de mostrar una cadena de texto en el componente que recibe como parametro, en este caso la descripción mediante una etiqueta p
+
+#### Componente tag
+
+Se encarga de mostrar un tag individual del grupo, mediante un div y un span, la cadena a mostrar se pasa como parametro.
+
+#### Tag List
+
+Este componente se encarga de agrupar los components tag en 
+
+
 
 ### Built with
 
